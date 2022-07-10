@@ -14,6 +14,7 @@ class BasePolarisAPIClient(object):
         r = requests.get(url=url, json=api_params)
         return r.json()
 
+    def parse_params(self):
     def discover(self, name, namespace):
         # i.e.
         # {
